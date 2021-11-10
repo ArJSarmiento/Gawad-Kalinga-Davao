@@ -1,0 +1,382 @@
+body {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #524fae;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 500vh;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding-top: 150px;
+    width: 100vw;
+  }
+  
+  .Header {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: white;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .Header.has-mobile-button .MobileNav-trigger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  
+  .Header-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-transition: height 0.4s ease;
+    transition: height 0.4s ease;
+    width: 80vw;
+  }
+  
+  .Header .logo {
+    -ms-flex-item-align: center;
+        align-self: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px;
+    margin-right: 60px;
+    width: 200px;
+  }
+  
+  .Header .logo img {
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 100%;
+  }
+  
+  .Header-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    height: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    max-height: 105px;
+    max-width: 940px;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .Header-nav-item {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    color: #FF9900;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    font-family: Lato, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    height: 100%;
+    line-height: 32px;
+    margin: 0 40px;
+    -webkit-transition: font-size 0.4s ease, padding 0.4s ease;
+    transition: font-size 0.4s ease, padding 0.4s ease;
+  }
+  
+  .Header-nav-item:last-child {
+    margin-right: 0;
+  }
+  
+  .Header-nav-item a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .Header-nav-item:hover {
+    color: #FF9900 !important;
+  }
+  
+  .Header-nav:hover .Header-nav-item {
+    color: #FF9900;
+  }
+  
+  @media screen and (min-width: 481px) {
+    .Header-nav {
+      height: auto;
+    }
+  }
+  
+  .container {
+    -ms-flex-line-pack: start;
+        align-content: flex-start;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    width: 80vw;
+  }
+  
+  .container .card {
+    background: white;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 50vh;
+    margin-bottom: 10%;
+    width: 100%;
+  }
+  
+  .MobileNav {
+    height: calc(100% - 55px);
+    left: 0;
+    pointer-events: none;
+    position: fixed;
+    top: 70px;
+    width: 100%;
+    z-index: 9;
+  }
+  
+  .MobileNav-inner {
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
+    max-width: 100%;
+    overflow-y: scroll;
+    position: absolute;
+    right: 0;
+    -webkit-transform: translate(0, -105%);
+            transform: translate(0, -105%);
+    -webkit-transition: visibility 0.4s ease, -webkit-transform 0.4s ease;
+    transition: visibility 0.4s ease, -webkit-transform 0.4s ease;
+    transition: transform 0.4s ease, visibility 0.4s ease;
+    transition: transform 0.4s ease, visibility 0.4s ease, -webkit-transform 0.4s ease;
+    visibility: hidden;
+    width: 100%;
+  }
+  
+  .MobileNav-inner .Button {
+    letter-spacing: 1px;
+    line-height: 3.8;
+    margin: 20px -8px 20px;
+    width: 100%;
+  }
+  
+  .MobileNav-inner .MobileNav-trigger {
+    display: none;
+    position: absolute;
+    right: 38px;
+    top: 30px;
+  }
+  
+  .MobileNav-item {
+    color: #FF9900;
+    display: none;
+    font-family: Lato, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 26px 0;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+  }
+  
+  .MobileNav-item.is-visible {
+    display: block;
+  }
+  
+  .MobileNav-item-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+  }
+  
+  .MobileNav-item-title a {
+    color: black;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    text-decoration: none;
+  }
+  
+  .MobileNav-item-title span {
+    min-width: 32px;
+    position: relative;
+    width: 100%;
+  }
+  
+  .MobileNav-item-title span::after {
+    border-left: 2px solid lightgray;
+    border-top: 2px solid lightgray;
+    content: "";
+    display: block;
+    height: 14px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-75%) rotate(225deg);
+            transform: translateY(-75%) rotate(225deg);
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    width: 14px;
+  }
+  
+  .MobileNav-overlay {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transition: background 0.4s ease;
+    transition: background 0.4s ease;
+    width: 100%;
+  }
+  
+  .MobileNav-trigger {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
+    height: 100%;
+  }
+  
+  .MobileNav-trigger-inner {
+    height: 12px;
+    position: relative;
+    width: 24px;
+  }
+  
+  .MobileNav-trigger-inner::after {
+    background: #524fae;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    width: 100%;
+  }
+  
+  .MobileNav-trigger-inner::before {
+    background: #524fae;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 0;
+    position: absolute;
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    width: 100%;
+  }
+  
+  .MobileNav-trigger.is-active .MobileNav-trigger-inner::after {
+    -webkit-transform: translateY(-4px) rotate(45deg);
+            transform: translateY(-4px) rotate(45deg);
+  }
+  
+  .MobileNav-trigger.is-active .MobileNav-trigger-inner::before {
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
+  }
+  
+  @media screen and (min-width: 481px) {
+    .MobileNav {
+      height: 100%;
+      top: 0;
+      z-index: 11;
+    }
+    .MobileNav-inner {
+      padding-top: 90px;
+      -webkit-transform: translate(100%, 0);
+              transform: translate(100%, 0);
+      width: 375px;
+    }
+    .MobileNav-inner .MobileNav-trigger {
+      display: block;
+    }
+    .MobileNav-trigger {
+      display: none;
+    }
+  }
+  
+  @media screen and (min-width: 871px) {
+    .MobileNav-inner {
+      padding-top: 160px;
+    }
+  }
+  
+  .is-mobilenav-open {
+    overflow-y: hidden;
+  }
+  
+  .is-mobilenav-open .MobileNav {
+    pointer-events: all;
+  }
+  
+  .is-mobilenav-open .MobileNav-inner {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    visibility: visible;
+  }
+  
+  .is-mobilenav-open .MobileNav-overlay {
+    background: rgba(0, 0, 0, 0.25);
+  }

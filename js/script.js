@@ -1,4 +1,58 @@
 document.addEventListener('DOMContentLoaded', function () {
+    console.clear();
+
+    const { gsap } = window;
+
+    let currentLink;
+    let currentIndex = 0;
+    const links = document.querySelectorAll("nav a");
+
+    links.forEach((link, index) => {
+        link.addEventListener("click", (e) => {
+            addActive(e, index);
+        });
+    });
+
+    function addActive(e, i) {
+        const target = e.currentTarget;
+        if (target != currentLink) {
+            let direction;
+            if (currentIndex < i) direction = "right";
+            else direction = "left";
+            const slide = target.querySelector(".slide");
+
+            gsap.timeline()
+                .call(() => {
+                links.forEach((link) => {
+                    link.classList.remove("active");
+                });
+            })
+                .fromTo(
+                slide,
+                {
+                    transformOrigin: `${direction == "left" ? "right" : "left"} center`,
+                    scaleX: 0,
+                },
+                {
+                    delay: 0.1,
+                    duration: 0.25,
+                    scaleX: 1,
+                }
+            )
+                .call(() => {
+                target.classList.add("active");
+            })
+                .to(slide, {
+                delay: 0.25,
+                duration: 0.25,
+                transformOrigin: `${direction} center`,
+                scaleX: 0,
+            });
+            currentLink = target;
+            currentIndex = i;
+        }
+    }
+
     function isOverflown({ clientWidth, clientHeight, scrollWidth, scrollHeight }) {
         return scrollHeight > clientHeight || scrollWidth > clientWidth;
     }
@@ -31,14 +85,24 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             const resizeObserver = new window.ResizeObserver((entries) => {
+                
                 for (const entry of entries) {
                     header.classList.toggle('has-mobile-button', isOverflown(nav));
                     navItems.forEach((item) => {
                         const navItems = Array.from(mobileNavItems);
                         const matchingNavItem = navItems.find(el => el.dataset.mobileNavItem === item.dataset.navItem);
-
+                        
                         matchingNavItem.classList.toggle('is-visible', !isVisible(nav, item));
                     });
+                }
+                //check width is less than of equal to 751 pixels
+                if (window.innerWidth <= 751) {
+                    //add class to second element
+                    mobileNavItems[1].classList.add('is-visible');
+                }
+                else {
+                    //remove class from second element
+                    mobileNavItems[1].classList.remove('is-visible');
                 }
             });
 

@@ -75,7 +75,6 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 400px;
     padding-top: 100px;
 }
 
@@ -96,5 +95,5 @@ section {
   }
 
 .layer1 {
-background-image: url('svg/layered-waves-haikei.svg');
+background-image: url('../svg/layered-waves-haikei.svg');
 }

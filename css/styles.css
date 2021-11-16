@@ -41,7 +41,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 100px;
+  height: 85px;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
@@ -144,11 +144,11 @@ a {
 }
 
 .MobileNav {
-  height: calc(100% - 55px);
+  height: 100%;
   left: 0;
   pointer-events: none;
   position: fixed;
-  top: 70px;
+  top: 45px;
   width: 100%;
   z-index: 9;
 }

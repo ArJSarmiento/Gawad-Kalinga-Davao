@@ -1,0 +1,60 @@
+.custom-shape-divider-top-1638111828 {
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-top-1638111828 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 50px;
+}
+
+.impact
+{
+    background: #ff9900;
+}
+
+.custom-shape-divider-top-1638111828 .shape-fill {
+    fill: #F5F5F3;
+}
+
+.impact-content 
+{
+    padding: 54px 0px;
+}
+
+.impact-content h1{
+    font-family: 'ROBOTO';
+    font-style: normal;
+    font-weight: bolder;
+    color: #f5f5f3;
+    font-size: max(20px, 20px);
+    line-height: 94.19%;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    padding-top: 10px;
+}
+
+.impact-content p
+{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: lighter;
+    color: rgb(245 245 243);
+    font-size: max(20px, 20px);
+    letter-spacing: 0.165em;
+    text-transform: capitalize;
+    text-align: center;
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    line-height: 25px;
+}

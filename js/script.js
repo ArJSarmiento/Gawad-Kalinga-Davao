@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', function () {
-    console.clear();
-
     const { gsap } = window;
 
     let currentLink;

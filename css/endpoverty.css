@@ -8,7 +8,7 @@
     font-family: Lato;
     font-style: normal;
     font-weight: bold;
-    font-size: max(3vw, 15px);
+    font-size: max(3vw, 1rem);
     line-height: 95.19%;
     letter-spacing: 0.16em;
     text-transform: capitalize;
@@ -24,13 +24,11 @@
 
 .black-rect{
     z-index: 3;
- 
     background: rgba(0, 0, 0, 0.68);
     backdrop-filter: blur(28px);
     font-style: normal;
     font-weight: 500;
-    font-size: max(5vw, 25px);
-
+    font-size: max(4vw, 1.8rem);
     color: white;
     font-weight: bold;
     font-family: Lato;
@@ -51,7 +49,15 @@
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
 }
+
+.wave {}
+
+.wave {}
 
 .wave svg {
     position: relative;
@@ -92,6 +98,10 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 4;
+    padding: 20px 0;
+    display: block;
+    border: none !important;
+    margin: 0;
 }
 
 .orange-icons {
@@ -131,7 +141,7 @@ section {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: bold;
-    color: rgb(131,132,134);
+    color: rgb(110 111 113);
     font-size: max(20px, 20px);
     line-height: 94.19%;
     letter-spacing: 0.165em;
@@ -145,7 +155,7 @@ section {
     font-style: normal;
     font-weight: bolder;
     color: rgb(64,65,66);
-    font-size: max(25px, 25px);
+    font-size: max(20px, 20px);
     line-height: 94.19%;
     letter-spacing: 0.05em;
     text-transform: capitalize;
@@ -158,6 +168,13 @@ section {
 .white-p-container
 {
     background:rgb(245,245,243);
+    padding: 20px 0px;
+    margin: 0;
+    border: none !important;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
 }
 
 .white-p div{
@@ -186,8 +203,8 @@ section {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: lighter;
-    color: rgb(131,132,134);
-    font-size: 1rem;
+    color: rgb(82 83 84);
+    font-size: max(20px, 20px);
     letter-spacing: 0.165em;
     text-transform: capitalize;
     text-align: center;
@@ -240,7 +257,7 @@ section {
     .white-p div p
     {
         width: 90%;
-        text-align: justify;
+        text-align: center;
     }
 }
 

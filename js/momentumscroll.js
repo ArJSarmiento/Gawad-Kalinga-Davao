@@ -54,5 +54,7 @@ $(document).ready(function()  {
   window.addEventListener('resize', function(event){
     mscroll();
   });
+
+  AOS.init();
 });    
 

@@ -1,5 +1,4 @@
 /* STYLES FOR NAV BAR AND HOPESTORIES */
-@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
 html,
 body {
   width: 100%;
@@ -32,10 +31,6 @@ button,
 select,
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-#fade{
-  opacity: 1;
 }
 
 .Header {
@@ -422,10 +417,7 @@ a {
 
 @media screen and (max-width: 570px) {
   .hopeStories {
-    /* align-items: center; */
-    /* display: flex; */
-    /* justify-content: center; */
-    height: 410px;
+    height: 430px;
   }
   .hopeStoriesImg {
     height: auto;
@@ -468,11 +460,10 @@ a {
     overflow-x: hidden;
   }
   .rects {
-    /* width: 60%; */
     z-index: 3;
     position: absolute;
     width: 65%;
-    top: 50%;
+    top: 45%;
   }
 }
 
@@ -485,18 +476,16 @@ a {
   .rects {
     z-index: 3;
     position: absolute;
-    width: 60%;
-    top: 23vw;
+    top: 20vw;
+    max-width: 60%;
   }
 
   .hopeStories
   {
-    /* z-index: 2; */
     position: relative;
     text-align: center;
     width: 100%;
     min-height: 47vw;
-    /* height: auto; */
     overflow: hidden;
     border: none;
     margin: 0;

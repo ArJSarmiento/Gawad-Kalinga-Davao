@@ -1,11 +1,16 @@
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
+
+
 .rectangle {
     z-index: 3;
-    width: 75%;
-    height: 65px;
-    font-family: Avenir LT Std;
+    width: 60%;
+    height: 50px;
+    font-family: Lato;
     font-style: normal;
-    font-weight: 750;
-    font-size: clamp(25px, 5vw, 48px);
+    font-weight: bold;
+    font-size: max(3vw, 1rem);
+    line-height: 95.19%;
+    letter-spacing: 0.16em;
     text-transform: capitalize;
     color: #FFA319;
     mix-blend-mode: normal;
@@ -21,16 +26,19 @@
     z-index: 3;
     background: rgba(0, 0, 0, 0.68);
     backdrop-filter: blur(28px);
-    font-size: clamp(25px, 6.4vw, 48px);
-    color: white;
-    font-family: Avenir LT Std;
     font-style: normal;
-    font-weight: 750;
+    font-weight: 500;
+    font-size: max(4vw, 1.8rem);
+    color: white;
+    font-weight: bold;
+    font-family: Lato;
     mix-blend-mode: normal;
     display: flex;
     align-items: center;
     text-align: left;
-    padding: 2% 5%;
+    padding-left: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
 }
 
 .wave {
@@ -59,7 +67,7 @@
 }
 
 .wave .shape-fill {
-    fill: white;
+    fill: rgb(245,245,243);
 }
 
 section {
@@ -67,7 +75,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* padding-top: 3px; */
+    padding-top: 3px;
     /* margin-top: 25px; */
 }
 
@@ -85,25 +93,23 @@ section {
 
 .orange-icons-container
 {
-    background: white;
+    background:rgb(245,245,243);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 4;
-    padding: 5vw;
-    display: flex;
+    padding: 20px 0;
+    display: block;
     border: none !important;
     margin: 0;
 }
 
 .orange-icons {
     width: 90%;
-    display: flex;
-    /* grid-template-columns: repeat(auto-fit, minmax(300px, max-content)); */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, max-content));
     justify-content: center;
-    /* margin: 0 auto; */
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: 0 auto;
 }
 
 .orange-icons * {
@@ -117,104 +123,137 @@ section {
 
 .icon-container
 {
-    width: 250px;
-    height: 250px;
-    margin: 3vw;
-}
-
-.icon-container:first-child
-{
-    background:url('../img/PoS 1.png');
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center;
-}
-
-.icon-container:nth-child(2)
-{
-    background:url('../img/PoS 5.png');
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center;
-}
-
-.icon-container:last-child
-{
-    background:url('../img/PoS 3.png');
-    background-size: cover;
-    background-repeat: no-repeat; 
-    background-position: center;
-}
-
-
-.platforms-head{
-    font-family: Avenir LT Std;
-    font-style: normal;
-    font-weight: 750;
-    font-size: clamp(20px, 5vw, 36px);
-    color: #404142;
-    line-height: 94.19%;
-    letter-spacing: 0.05em;
-    text-transform: capitalize;
-    width: 90%;
-    text-align: center;
-    margin: 0px;
-}
-
-.white-p-container
-{
-    background: white;
-    padding: 40px 0px;
-    border: none !important;
-    margin: 0;
-    display: block;
-}
-
-.white-p div{
-    width:90%;
-    margin-top: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
 
-.white-p div h1
-{
-    font-family: Avenir LT Std;
-    font-weight: 750;
-    font-size: clamp(20px, 5vw, 36px);
+.icon-container i {
+    font-size: 3.5rem;
+    display: inline;
+    /* text-align: center; */
+    margin-right: 10px;
+    font-size: 2.75rem;
+    text-align: center;
+    width: 20%;
+}
+
+.icon-container p {
+    font-family: 'Roboto';
     font-style: normal;
+    font-weight: bold;
+    color: rgb(110 111 113);
+    font-size: max(20px, 20px);
+    line-height: 94.19%;
+    letter-spacing: 0.165em;
+    text-transform: capitalize;
+    display: inline;
+    width: 100%;
+}
+
+.platforms-head{
+    font-family: 'ROBOTO';
+    font-style: normal;
+    font-weight: bolder;
     color: rgb(64,65,66);
+    font-size: max(20px, 20px);
     line-height: 94.19%;
     letter-spacing: 0.05em;
     text-transform: capitalize;
     width: 100%;
     text-align: center;
     margin: 0px;
+    padding-top: 10px;
+}
+
+.white-p-container
+{
+    background:rgb(245,245,243);
+    padding: 20px 0px;
+    margin: 0;
+    border: none !important;
+    border: none;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+.white-p div{
+    width:90%;
+    margin-top: 10px;
+}
+
+.white-p div h1
+{
+    font-family: 'ROBOTO';
+    font-style: normal;
+    font-weight: bolder;
+    color: rgb(64,65,66);
+    font-size: 19px;
+    line-height: 94.19%;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+    padding-top: 10px;
 }
 
 .white-p div p
 {
-    font-family: Roboto;
-    font-weight: normal;
-    font-size: clamp(13px, 5vw, 24px);
-    
-/* or 43px */
-    letter-spacing: 0.135em;
+    font-family: 'Roboto';
     font-style: normal;
+    font-weight: lighter;
     color: rgb(82 83 84);
-    /* font-size: max(20px, 20px); */
+    font-size: max(20px, 20px);
+    letter-spacing: 0.165em;
     text-transform: capitalize;
     text-align: center;
-    width: 75%;
-    padding: clamp(0px, 5vw, 25px);
-    /* margin-top: 10px; */
-    line-height: 43px;
-    /* align-self: center; */
+    width: 85%;
+    margin: auto;
+    margin-top: 10px;
+    line-height: 25px;
+}
+
+@media screen and (min-width: 560px) and (max-width: 1090px) {
+    .icon-container:last-child {
+        grid-column: 1 / 3;
+        width: 70%;
+        justify-self: center;
+    }
+    .orange-icons
+    {
+        grid-gap: 1px;
+    }
+
+
 }
 
 @media screen and (max-width: 560px) {
+    .icon-container {
+        display: block;
+        align-items: center;
+    }
+    .icon-container i {
+        font-size: 3.5rem;
+        margin-right: 10px;
+        font-size: 5rem;
+        text-align: center;
+        width: 100%;
+        display:block;
+    }
+    
+    .icon-container p {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 19px;
+        line-height: 22px;
+        color: #636466;
+        text-transform: capitalize;
+        width: 100%;
+        text-align: center;
+        display:block;
+    }
+    
     .white-p div p
     {
         width: 90%;

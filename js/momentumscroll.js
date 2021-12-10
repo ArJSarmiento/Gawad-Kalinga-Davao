@@ -1,11 +1,6 @@
-$(document).ready(function()  {     
-  //check if mobile
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) 
-  {
-
-    return
-  }
-  else
+document.addEventListener("DOMContentLoaded", function () {  
+  //check if on mobile
+  if (window.innerWidth >= 769) 
   {
     function mscroll()
     {
@@ -62,9 +57,6 @@ $(document).ready(function()  {
     window.addEventListener('resize', function(event){
       mscroll();
     });
-  
-    // AOS.init();
   }
-
 });    
 

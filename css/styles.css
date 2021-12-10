@@ -412,7 +412,7 @@ a {
   z-index: 3;
   position: absolute;
   top: 45vh;
-  width: 60%;
+  width: 50%;
 }
 
 @media screen and (max-width: 550px) {

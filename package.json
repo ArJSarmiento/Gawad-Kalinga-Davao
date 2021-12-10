@@ -1,6 +1,0 @@
-{
-  "dependencies": {
-    "aos": "^2.3.4",
-    "lazyload": "^2.0.0-rc.2"
-  }
-}

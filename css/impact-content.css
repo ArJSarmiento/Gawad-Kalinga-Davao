@@ -61,7 +61,7 @@
 }
 
 
-.ourprog-content .progcontainer::before
+#p1::before
 {
     content: "";
     position: absolute;
@@ -93,175 +93,19 @@
 }
 
 .progimg{
-    border-radius: 140px;
-    background-size: cover;
+    border-radius: 70px;
     width: min(85%,600px);
     height: 650px;
 }
 
-.progimg:nth-child(1)
+.progimg
 {
-    background:url(../img/programs/programs_01static.jpg); 
     background-size: cover;
     background-position: center center;
 }
 
-.proglabel:nth-child(2)
+.proglabel
 {
-    background:url(../img/programIcons/01.png);
-    background-size: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-
-.progimg:nth-child(3)
-{
-    background:url(../img/programs/programs_02static.jpg); 
-    background-size: cover;
-    background-position: center center;
-}
-
-.proglabel:nth-child(4)
-{
-    background:url(../img/programIcons/02.png);
-    background-size: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.progimg:nth-child(5)
-{
-    background:url(../img/programs/programs_03static.jpg); 
-    background-size: cover;
-    background-position: center center;
-}
-
-.proglabel:nth-child(6)
-{
-    background:url(../img/programIcons/03.png);
-    background-size: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.progimg:nth-child(7)
-{
-    background:url(../img/programs/programs_04static.jpg); 
-    background-size: cover;
-    background-position: center center;
-}
-
-.proglabel:nth-child(8)
-{
-    background:url(../img/programIcons/04.png);
-    background-size: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-#p2 .progcontainer .progimg:nth-child(1)
-{
-    background:url(../img/programs/programs_04static_1.jpg); 
-    background-size: cover;
-    background-position: center center;
-}
-
-#p2 .progcontainer .proglabel:nth-child(2)
-{
-    background:url(../img/programIcons/05.png); 
-    background-size: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-#p2 .progcontainer .progimg:nth-child(3)
-{
-    background:url(../img/programs/programs_04Bstatic.jpg); 
-    background-size: cover;
-    background-position: center center;
-}
-
-#p2 .progcontainer .proglabel:nth-child(4)
-{
-    background:url(../img/programIcons/11.png); 
-    background-size: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-
-#p2 .progcontainer .progimg:nth-child(5)
-{
-    background:url(../img/programs/programs_05static.jpg) ; 
-    background-size: cover;
-    background-position: center center;
-}
-
-#p2 .progcontainer .proglabel:nth-child(6)
-{
-    background:url(../img/programIcons/06.png); 
-    background-size: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-#p2 .progcontainer .progimg:nth-child(7)
-{
-    background:url(../img/programs/programs_06static.jpg); 
-    background-size: cover;
-    background-position: center center;
-}
-
-#p2 .progcontainer .proglabel:nth-child(8)
-{
-    background:url(../img/programIcons/07.png); 
-    background-size: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-#p2 .progcontainer .progimg:nth-child(9)
-{
-    background:url(../img/programs/programs_07static.jpg); 
-    background-size: cover;
-    background-position: center center;
-}
-
-#p2 .progcontainer .proglabel:nth-child(10)
-{
-    background:url(../img/programIcons/09.png); 
-    background-size: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-#p2 .progcontainer .progimg:nth-child(11)
-{
-    background:url(../img/programs/programs_08static.jpg); 
-    background-size: cover;
-    background-position: center center;
-}
-
-#p2 .progcontainer .proglabel:nth-child(12)
-{
-    background:url(../img/programIcons/08.png); 
-    background-size: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-
-#p2 .progcontainer .progimg:nth-child(13)
-{
-    background:url(../img/programs/programs_10static.jpg); 
-    background-size: cover;
-    background-position: center center;
-}
-
-#p2 .progcontainer .proglabel:nth-child(14)
-{
-    background:url(../img/programIcons/10.png); 
     background-size: 80%;
     background-position: center center;
     background-repeat: no-repeat;
@@ -305,19 +149,19 @@
     }
     
     .progimg{
-        border-radius: 140px;
+        border-radius: 85px;
         background-size: cover;
         width: min(365px,90%);
         height: 500px;
     }
 
-    .ourprog-content .progcontainer::before
+    #p1::before
     {
         content: "";
         position: absolute;
         width: 10%;
         height: 33%;
-        left: 5%;
+        left: 3%;
         top: 182px;
         background: #FFA319;
         border-radius: 226px;
@@ -330,7 +174,7 @@
         position: absolute;
         width: 10%;
         height: 59%;
-        left: 5%;
+        left: 3%;
         background: #FFA319;
         border-radius: 226px;
         z-index:0;

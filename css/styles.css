@@ -387,45 +387,48 @@ a {
 }
 
 .hopeStories {
-  /* z-index: 2; */
   position: relative;
   text-align: center;
   width: 100%;
-  min-height: 82vw;
-  /* height: auto; */
   overflow: hidden;
   border: none;
   margin: 0;
   padding: 0;
   display: block;
+  height: 95vh;
 }
 
-.hopeStoriesImg {
-  transform-origin: top center;
-  width: 100%;
+.hopeStoriesBG{
   position: fixed;
-  left: 0px;
-  top: 0px;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  background: url(../img/hopestories2.jpg) no-repeat center center fixed;
+  background-size: cover;
+  width: 100%;
+  height: 95vh;
 }
 
-@media screen and (max-width: 850px) {
-  .hopeStoriesImg {
-    transform: scale(1.7);
+.rects {
+  z-index: 3;
+  position: absolute;
+  top: 45vh;
+  width: 60%;
+}
+
+@media screen and (max-width: 550px) {
+  .rects {
+    width: 70%;
+    top: 45vh;
   }
-}
-
-@media screen and (max-width: 570px) {
   .hopeStories {
-    height: 430px;
+    height: 80vh;
   }
-  .hopeStoriesImg {
-    height: auto;
-    width: 180%;
-    left: -138px;
-    transform: scale(1.5);
+  
+  .hopeStoriesBG{
+    height: 80vh;
   }
 }
+
 
 @media screen and (max-width: 480px) {
   .is-mobilenav-open .Header {
@@ -453,46 +456,7 @@ a {
 
 }
 
-@media screen and (max-width: 850px) {
-  html, body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-  }
-  .rects {
-    z-index: 3;
-    position: absolute;
-    width: 65%;
-    top: 45%;
-  }
-}
 
-@media screen and (min-width: 851px) {
-  html, body {
-    width: 100%;
-    height: 100%;
-    overflow-x: hidden;
-  }
-  .rects {
-    z-index: 3;
-    position: absolute;
-    top: 20vw;
-    max-width: 60%;
-  }
-
-  .hopeStories
-  {
-    position: relative;
-    text-align: center;
-    width: 100%;
-    min-height: 47vw;
-    overflow: hidden;
-    border: none;
-    margin: 0;
-    padding: 0;
-    display: block;
-  }
-}
 @media screen and (min-width: 481px) {
   .MobileNav {
     height: 100%;

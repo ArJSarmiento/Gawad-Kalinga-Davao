@@ -9,9 +9,9 @@
   <title>Welcome to Gawad Kalinga Davao</title>
 
   <link rel="icon" type="image/png" href="img/icon.png" />
-  <link
+  <!-- <link
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-    rel="stylesheet" />
+    rel="stylesheet" /> -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
 
   <link href="css/styles.css" rel="stylesheet" />
@@ -20,15 +20,29 @@
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-  <script src="https://kit.fontawesome.com/956075952a.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   
-  <script src="node_modules/aos/dist/aos.js"></script>
+  <script src="node_modules/lazyload/lazyload.js"></script>
   <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
-  
+  <script src="node_modules/aos/dist/aos.js"></script>
+ 
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/momentumscroll.js"></script>
   
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      AOS.init({offset: 60, once: false,  disable: 'phone', duration: 300,
+        initClassName: 'aos-init',
+        animatedClassName: 'aos-animate',
+        useClassNames: false,
+        disableMutationObserver: false,
+        debounceDelay: 50,
+        throttleDelay: 99,
+      }); 
+      
+      lazyload();
+    });
+  </script>
 </head>
 
 <body>
@@ -98,7 +112,7 @@
     </div>
   </header>
   
-  <img class="hopeStoriesImg" src="img/hopestories2.jpg" alt="https://www.gk1world.com/deploy/images/Revamp2019/hopestories.jpg" />
+  <div class="hopeStoriesBG"></div>
 
   <main id="main">
     <section class="hopeStories">
@@ -169,24 +183,20 @@
 
       <div class="ourprog-content">
         <h1>OUR PROGRAMS</h1>
-        
-        <div class="progcontainer">
-          <div data-aos="fade-down-left" class="progimg"
-          ></div>
-          <div data-aos="fade-down-right" class="proglabel" 
-          ></div>
+        <div id="p1">
+          <div class="progcontainer">
+            <div class="lazyload progimg" data-src="img/programs/programs_01static.jpg" data-aos="fade-down-left"></div>
+            <div  class="lazyload proglabel"  data-src="img/programIcons/01.png" data-aos="fade-down-right"></div>
 
-          <div data-aos="fade-down-left" class="progimg" ></div>            
-          <div data-aos="fade-down-right" class="proglabel" 
-          ></div>
-    
-          <div data-aos="fade-down-left" class="progimg" ></div>            
-          <div data-aos="fade-down-right" class="proglabel"
-          ></div>
-
-          <div data-aos="fade-down-left" class="progimg" ></div>            
-          <div data-aos="fade-down-right" class="proglabel"
-          ></div>
+            <div  class="lazyload progimg"  data-src="img/programs/programs_02static.jpg" data-aos="fade-down-left"></div>            
+            <div  class="lazyload proglabel"  data-src="img/programIcons/02.png" data-aos="fade-down-right"></div>
+      
+            <div  class="lazyload progimg"  data-src="img/programs/programs_03static.jpg" data-aos="fade-down-left"></div>            
+            <div  class="lazyload proglabel"  data-src="img/programIcons/03.png" data-aos="fade-down-right"></div>
+  
+            <div  class="lazyload progimg"  data-src="img/programs/programs_04static.jpg" data-aos="fade-down-left"></div>            
+            <div class="lazyload proglabel"  data-src="img/programIcons/04.png" data-aos="fade-down-right"></div>
+          </div>
         </div>
         
         <div class="reach">
@@ -195,36 +205,26 @@
 
         <div id="p2">
           <div class="progcontainer"> 
-            <div data-aos="fade-down-left" class="progimg" 
-            "></div>                       
-            <div data-aos="fade-down-right" class="proglabel"
-            ></div>
+            <div data-aos="fade-down-left" class="lazyload progimg" data-src="img/programs/programs_04static_1.jpg"></div>                       
+            <div data-aos="fade-down-right" class="lazyload proglabel" data-src="img/programIcons/05.png"></div>
   
-            <div data-aos="fade-down-left" class="progimg" ></div>                       
-            <div data-aos="fade-down-right" class="proglabel"
-            ></div>
+            <div data-aos="fade-down-left" class="lazyload progimg"  data-src="img/programs/programs_04Bstatic.jpg"></div>                       
+            <div data-aos="fade-down-right" class="lazyload proglabel" data-src="img/programIcons/11.png"></div>
   
-            <div data-aos="fade-down-left" class="progimg" 
-            "></div>                       
-            <div data-aos="fade-down-right" class="proglabel"
-            ></div>
+            <div data-aos="fade-down-left" class="lazyload progimg" data-src="img/programs/programs_05static.jpg"></div>                       
+            <div data-aos="fade-down-right" class="lazyload proglabel" data-src="img/programIcons/06.png"></div>
           
-            <div data-aos="fade-down-left" class="progimg" ></div>
-            <div data-aos="fade-down-right" class="proglabel"
-            ></div>
+            <div data-aos="fade-down-left" class="lazyload progimg"  data-src="img/programs/programs_06static.jpg"></div>
+            <div data-aos="fade-down-right" class="lazyload proglabel" data-src="img/programIcons/07.png"></div>
     
-            <div data-aos="fade-down-left" class="progimg" 
-              ></div>            
-            <div data-aos="fade-down-right" class="proglabel"
-            ></div>
+            <div data-aos="fade-down-left" class="lazyload progimg" data-src="img/programs/programs_07static.jpg"></div>            
+            <div data-aos="fade-down-right" class="lazyload proglabel"  data-src="img/programIcons/09.png"></div>
       
-            <div data-aos="fade-down-left" class="progimg" ></div>            
-            <div data-aos="fade-down-right" class="proglabel"
-            ></div>
+            <div data-aos="fade-down-left" class="lazyload progimg"  data-src="img/programs/programs_08static.jpg"></div>            
+            <div data-aos="fade-down-right" class="lazyload proglabel" data-src="img/programIcons/08.png"></div>
     
-            <div data-aos="fade-down-left" class="progimg" ></div>            
-            <div data-aos="fade-down-right" class="proglabel"
-              ></div>
+            <div data-aos="fade-down-left" class="lazyload progimg"  data-src="img/programs/programs_10static.jpg"></div>            
+            <div data-aos="fade-down-right" class="lazyload proglabel" data-src="img/programIcons/10.png"></div>
           </div>
         </div>
       </div>

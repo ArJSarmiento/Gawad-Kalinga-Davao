@@ -399,7 +399,7 @@ a {
 }
 
 .hopeStoriesBG{
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   background: url(../img/hopestories2.jpg) no-repeat center center fixed;

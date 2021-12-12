@@ -97,26 +97,20 @@
 .proglabel{
     width: 90%;
     height: 650px;
+
+    background-size: 80%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    will-change: transform;
 }
 
 .progimg{
     border-radius: 70px;
     width: min(85%,600px);
     height: 650px;
-}
 
-.progimg
-{
     background-size: cover;
     background-position: center center;
-    will-change: transform;
-}
-
-.proglabel
-{
-    background-size: 80%;
-    background-position: center center;
-    background-repeat: no-repeat;
     will-change: transform;
 }
 

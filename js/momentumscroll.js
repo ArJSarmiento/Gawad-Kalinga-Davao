@@ -1,3 +1,6 @@
+
+
+
 document.addEventListener("DOMContentLoaded", function () {  
   //check if on mobile
   if (window.innerWidth >= 769) 

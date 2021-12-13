@@ -13,40 +13,77 @@
     href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
     rel="stylesheet" /> -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
-
+  <link href="css/impact-content.css" rel="stylesheet" />
   <link href="css/styles.css" rel="stylesheet" />
   <link href="css/endpoverty.css" rel="stylesheet" />
-  <link href="css/impact-content.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/contact.css">
+  <link rel="stylesheet" href="css/footer.css">
 
   <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+ 
 
-  <script src="node_modules/lazyload/lazyload.js"></script>
   <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
   <script src="node_modules/aos/dist/aos.js"></script>
 
   <script type="text/javascript" src="js/script.js"></script>
-  <!-- <script type="text/javascript" src="js/momentumscroll.js"></script> -->
+  <script type="text/javascript" src="js/momentumscroll.js"></script>
 
   <script>
     document.addEventListener("DOMContentLoaded", function () {
       AOS.init({
-        offset: 60, once: false, duration: 300,
-        initClassName: 'aos-init',
-        animatedClassName: 'aos-animate',
-        useClassNames: false,
-        disableMutationObserver: false,
+        offset: 60,  duration: 300,
         debounceDelay: 50,
         throttleDelay: 99,
       });
-
-      lazyload();
+      document.querySelectorAll('.progimg, .proglabel')
+      .forEach((img) =>
+          img.addEventListener('load', () =>
+            AOS.refresh()
+          )
+      );
     });
   </script>
 </head>
 
 <body>
+  <div id="preload">
+    <img src="img/programIcons/01.webp"> 
+    <img src="img/programIcons/02.webp">
+    <img src="img/programIcons/03.webp"> 
+    <img src="img/programIcons/04.webp">
+    <img src="img/programIcons/05.webp"> 
+    <img src="img/programIcons/06.webp">
+    <img src="img/programIcons/07.webp"> 
+    <img src="img/programIcons/08.webp">
+    <img src="img/programIcons/09.webp"> 
+    <img src="img/programIcons/10.webp">
+    <img src="img/programIcons/11.webp">
+    <img src="img/programs/programs_01hover.webp">
+    <img src="img/programs/programs_01static.webp">
+    <img src="img/programs/programs_02hover.webp">
+    <img src="img/programs/programs_02static.webp">
+    <img src="img/programs/programs_03hover.webp">
+    <img src="img/programs/programs_03static.webp">
+    <img src="img/programs/programs_04Bhover.webp">
+    <img src="img/programs/programs_04Bstatic.webp">
+    <img src="img/programs/programs_04hover_1.webp">
+    <img src="img/programs/programs_04hover.webp">
+    <img src="img/programs/programs_04static_1.webp">
+    <img src="img/programs/programs_04static.webp">
+    <img src="img/programs/programs_05hover.webp">
+    <img src="img/programs/programs_05static.webp">
+    <img src="img/programs/programs_06hover.webp">
+    <img src="img/programs/programs_06static.webp">
+    <img src="img/programs/programs_07hover.webp">
+    <img src="img/programs/programs_07static.webp">
+    <img src="img/programs/programs_08hover.webp">
+    <img src="img/programs/programs_08static.webp">
+    <img src="img/programs/programs_10hover.webp">
+    <img src="img/programs/programs_10static.webp">
+  </div>
+
   <div class="MobileNav" data-mobile-nav>
     <div class="MobileNav-overlay" data-mobile-nav-overlay></div>
     <div class="MobileNav-inner">
@@ -117,9 +154,9 @@
 
   <main id="main">
     <section class="hopeStories">
-      <div class="rects">
-        <div class="rectangle">END POVERTY</div>
-        <div class="black-rect">The Journey to a Future Full of Hope</div>
+      <div class="endpoverty">
+        <div class="orange">END POVERTY</div>
+        <div class="black">The Journey to a Future Full of Hope</div>
       </div>
 
       <div class="wave">
@@ -141,13 +178,13 @@
       <h1 class="platforms-head">OUR PLATFORMS OF SOLIDARITY</h1>
 
       <section class="orange-icons">
-        <div data-aos="flip-up" data-aos-offset="400" class="icon-container">
+        <div data-aos="flip-up" data-aos-offset="300" class="icon-container">
         </div>
 
-        <div data-aos="flip-up" data-aos-offset="400" class="icon-container">
+        <div data-aos="flip-up" data-aos-offset="300" class="icon-container">
         </div>
 
-        <div data-aos="flip-up" data-aos-offset="400" class="icon-container">
+        <div data-aos="flip-up" data-aos-offset="300" class="icon-container">
         </div>
       </section>
     </section>
@@ -186,17 +223,17 @@
         <h1>OUR PROGRAMS</h1>
         <div id="p1">
           <div class="progcontainer">
-            <div class="lazyload progimg" data-src="img/programs/programs_01static.jpg" data-aos="fade-down-left" data-aos-offset="400"></div>
-            <div class="lazyload proglabel" data-src="img/programIcons/01.png" data-aos="fade-down-right" data-aos-offset="400"></div>
+            <a href="https://www.gk1world.com/GKBI" class="progimg" style="background-image:url(img/programs/programs_01static.webp);" data-aos="fade-down-left" data-aos-offset="300"></a>
+            <a class="proglabel" style="background-image:url(img/programIcons/01.webp);" data-aos="fade-down-right" data-aos-offset="300"></a>
 
-            <div class="lazyload progimg" data-src="img/programs/programs_02static.jpg" data-aos="fade-down-left" data-aos-offset="400"></div>
-            <div class="lazyload proglabel" data-src="img/programIcons/02.png" data-aos="fade-down-right" data-aos-offset="400"></div>
+            <a href="https://www.gk1world.com/GKCDC" class="progimg" style="background-image:url(img/programs/programs_02static.webp);" data-aos="fade-down-left" data-aos-offset="300"></a>
+            <a class="proglabel" style="background-image:url(img/programIcons/02.webp);" data-aos="fade-down-right" data-aos-offset="300"></a>
 
-            <div class="lazyload progimg" data-src="img/programs/programs_03static.jpg" data-aos="fade-down-left" data-aos-offset="400"></div>
-            <div class="lazyload proglabel" data-src="img/programIcons/03.png" data-aos="fade-down-right" data-aos-offset="400"></div>
+            <a href="https://www.gk1world.com/ArticleViewer.aspx?ID=212407" class="progimg" style="background-image:url(img/programs/programs_03static.webp);" data-aos="fade-down-left" data-aos-offset="300"></a>
+            <a class="proglabel" style="background-image:url(img/programIcons/03.webp);" data-aos="fade-down-right" data-aos-offset="300"></a>
 
-            <div class="lazyload progimg" data-src="img/programs/programs_04static.jpg" data-aos="fade-down-left" data-aos-offset="400"></div>
-            <div class="lazyload proglabel" data-src="img/programIcons/04.png" data-aos="fade-down-right" data-aos-offset="400"></div>
+            <a href="https://www.gk1world.com/ArticleViewer.aspx?ID=212335" class="progimg" style="background-image:url(img/programs/programs_04static.webp);" data-aos="fade-down-left" data-aos-offset="300"></a>
+            <a class="proglabel" style="background-image:url(img/programIcons/04.webp);" data-aos="fade-down-right" data-aos-offset="300"></a>
           </div>
         </div>
 
@@ -211,45 +248,68 @@
 
         <div id="p2">
           <div class="progcontainer">
-            <div class="lazyload progimg" data-src="img/programs/programs_04static_1.jpg" data-aos="fade-down-left" data-aos-offset="400"></div>
-            <div class="lazyload proglabel" data-src="img/programIcons/05.png" data-aos="fade-down-right" data-aos-offset="400"></div>
+            <a href"https://www.gk1world.com/ArticleViewer.aspx?ID=212402" class="progimg" style="background-image:url(img/programs/programs_04static_1.webp);"  data-aos="fade-down-left" data-aos-offset="300"></a>
+            <a class="proglabel" style="background-image:url(img/programIcons/05.webp);" data-aos="fade-down-right" data-aos-offset="300"></a>
+            
+            <a href"https://www.gk1world.com/ArticleViewer.aspx?ID=212392" class="progimg" style="background-image:url(img/programs/programs_07static.webp);" data-aos="fade-down-left" data-aos-offset="300"></a>
+            <a class="proglabel" style="background-image:url(img/programIcons/09.webp);" data-aos="fade-down-right" data-aos-offset="300"></a>
 
-            <div class="lazyload progimg" data-src="img/programs/programs_04Bstatic.jpg" data-aos="fade-down-left" data-aos-offset="400">
-            </div>
-            <div class="lazyload proglabel" data-src="img/programIcons/11.png" data-aos="fade-down-right" data-aos-offset="400"></div>
+            <a href"https://www.gk1world.com/ArticleViewer.aspx?ID=212401" class="progimg" style="background-image:url(img/programs/programs_08static.webp);"  data-aos="fade-down-left" data-aos-offset="300"></a>
+            <a class="proglabel" style="background-image:url(img/programIcons/08.webp);" data-aos="fade-down-right" data-aos-offset="300"></a>
 
-            <div class="lazyload progimg" data-src="img/programs/programs_05static.jpg" data-aos="fade-down-left" data-aos-offset="400"></div>
-            <div class="lazyload proglabel" data-src="img/programIcons/06.png" data-aos="fade-down-right" data-aos-offset="400"></div>
-
-            <div class="lazyload progimg" data-src="img/programs/programs_06static.jpg" data-aos="fade-down-left" data-aos-offset="400"></div>
-            <div class="lazyload proglabel" data-src="img/programIcons/07.png" data-aos="fade-down-right" data-aos-offset="400"></div>
-
-            <div class="lazyload progimg" data-src="img/programs/programs_07static.jpg" data-aos="fade-down-left" data-aos-offset="400"></div>
-            <div class="lazyload proglabel" data-src="img/programIcons/09.png" data-aos="fade-down-right" data-aos-offset="400"></div>
-
-            <div class="lazyload progimg" data-src="img/programs/programs_08static.jpg" data-aos="fade-down-left" data-aos-offset="400"></div>
-            <div class="lazyload proglabel" data-src="img/programIcons/08.png" data-aos="fade-down-right" data-aos-offset="400"></div>
-
-            <div class="lazyload progimg" data-src="img/programs/programs_10static.jpg" data-aos="fade-down-left" data-aos-offset="400"></div>
-            <div class="lazyload proglabel" data-src="img/programIcons/10.png" data-aos="fade-down-right" data-aos-offset="400"></div>
+            <a href"https://www.gk1world.com/ArticleViewer.aspx?ID=212400" class="progimg" style="background-image:url(img/programs/programs_10static.webp);" data-aos="fade-down-left" data-aos-offset="300"></a>
+            <a class="proglabel" style="background-image:url(img/programIcons/10.webp);" data-aos="fade-down-right" data-aos-offset="300"></a>
           </div>
         </div>
       </div>
 
     </section>
 
-    <!-- 
-    <section class="map">
-      <div>
-       
+    <section class="contact-container">
+      <div class="spacer layer1"></div>
+
+      <div id="contact">
+        <h1 class="section-header">Contact Us</h1>
+        <form action="">
+          <div class="input-container ic1">
+            <input id="firstname" class="input" type="text" placeholder=" " />
+            <div class="cut"></div>
+            <label for="firstname" class="placeholder">First name</label>
+          </div>
+          <div class="input-container ic2">
+            <input id="lastname" class="input" type="text" placeholder=" " />
+            <div class="cut"></div>
+            <label for="lastname" class="placeholder">Last name</label>
+          </div>
+          <div class="input-container ic2">
+            <input id="email" class="input" type="text" placeholder=" " />
+            <div class="cut cut-short"></div>
+            <label for="email" class="placeholder">Email</>
+          </div>
+          <button type="text" class="submit">SEND</button>
+        </form>
       </div>
+      
+      <div class="spacer layer2"></div>
     </section>
 
-    <section class="contact">
-      <div>
-       
+  <footer>
+    <div class="endpovertytext">
+      <span class="t1"> TOGETHER, WE CAN 
+        <span class="t2">
+          END POVERTY
+          <span class="t3">.
+
+          </span>
+        </span>
+      </span>
+    </div>
+    <div class="contactdetails">
+      <div class="logo">
+
       </div>
-    </section>  -->
+    </div>
+  </footer>
   </main>
 </body>
 

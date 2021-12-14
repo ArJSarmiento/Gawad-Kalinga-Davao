@@ -4,9 +4,9 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  position: absolute;
+  /* position: absolute; */
   top: -21px;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 .layer1
@@ -27,7 +27,13 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  margin: 202px 0px;
+  /* margin: -17vh 0px; */
+}
+
+#area{
+  height: 150px;
+  line-height: 150%;
+  resize:vertical;
 }
 
 .section-header {
@@ -71,11 +77,12 @@ form{
 }
 
 .ic1 {
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 
 .ic2 {
   margin-top: 30px;
+  height: 100p;
 }
 
 .input {

@@ -416,8 +416,10 @@ a {
   z-index: 3;
   position: absolute;
   top: 45vh;
-  width: 50%;
+  width: 50vw;
+  /* transform: scale(0.5); */
 }
+
 
 @media screen and (max-width: 550px) {
   .endpoverty {

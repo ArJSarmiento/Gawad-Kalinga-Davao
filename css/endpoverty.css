@@ -69,6 +69,8 @@ section {
     align-items: center;
     /* padding-top: 3px; */
     /* margin-top: 25px; */
+    padding: 0;
+    margin: 0;
 }
 
 .spacer {

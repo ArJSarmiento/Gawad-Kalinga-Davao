@@ -4,9 +4,13 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* position: absolute; */
-  top: -21px;
-  /* pointer-events: none; */
+  position: absolute;
+  top: -11px;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  pointer-events: none;
+  z-index: 1;
 }
 
 .layer1
@@ -15,7 +19,10 @@
 }
 
 .contact-container{
-  background-color: #ffa319;
+  background:url("../img/programs/programs_04Bstatic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #contact {
@@ -27,7 +34,8 @@
   align-content: center;
   justify-content: center;
   align-items: center;
-  /* margin: -17vh 0px; */
+  margin: 20% 0px;
+  opacity: 1;
 }
 
 #area{
@@ -39,7 +47,7 @@
 .section-header {
   text-align: center;
   margin: 0 auto;
-  padding: 40px 0;
+  padding-bottom: 40px;
   font-family: Avenir LT Std;
   font-style: normal;
   font-weight: 750;
@@ -50,7 +58,7 @@
 }
 
 form{
-  max-width: 582px;
+  max-width: 650px;
   width: 100%;
 }
 
@@ -82,7 +90,7 @@ form{
 
 .ic2 {
   margin-top: 30px;
-  height: 100p;
+  /* height: 100px; */
 }
 
 .input {
@@ -90,16 +98,18 @@ form{
   border-radius: 12px;
   border: 0;
   box-sizing: border-box;
-  color: #eee;
+  color: #000000;
   font-size: 18px;
   height: 100%;
   outline: 0;
-  padding: 4px 20px 0;
+  padding: 10px 20px 0;
   width: 100%;
+  resize: none;
+  font-family: Roboto;
 }
 
 .cut {
-  background-color: #FFA319;
+  background-color: #ffa319;
   border-radius: 10px;
   height: 20px;
   left: 20px;
@@ -164,4 +174,88 @@ form{
 .submit:hover {
   background-color: white;
   color: #ffa319;
+}
+
+#textarea{
+  height: 30vh;
+}
+
+.contactbg
+{
+  background-color: rgb(255,163,25);
+  opacity: 0.91;
+  display: flex;
+  background-size: cover;
+  width: 100%;
+  justify-content: center;
+}
+
+
+.contactButtonNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: -21px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contactButtonNav ul li {
+  --c: white;
+  color: var(--c);
+  font-size: 16px;
+  border: 3px solid var(--c);
+  border-radius: 0.5em;
+  width: 100%;
+  height: 3em;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-family: Roboto;
+  letter-spacing: 0.1em;
+  text-align: center;
+  line-height: 3em;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 0.5s;
+  margin: 1em;
+  cursor: pointer;
+}
+
+.contactButtonNav ul li span {
+  position: absolute;
+  width: 25%;
+  height: 100%;
+  background-color: var(--c);
+  transform: translateY(150%);
+  border-radius: 50%;
+  left: calc((var(--n) - 1) * 25%);
+  transition: 0.5s;
+  transition-delay: calc((var(--n) - 1) * 0.1s);
+  z-index: -1;
+}
+
+.contactButtonNav ul li:hover {
+  color: rgb(255,163,25);
+}
+
+.contactButtonNav ul li:hover span {
+  transform: translateY(0) scale(2);
+}
+
+.contactButtonNav ul li span:nth-child(1) {
+  --n: 1;
+}
+
+.contactButtonNav ul li span:nth-child(2) {
+  --n: 2;
+}
+
+.contactButtonNav ul li span:nth-child(3) {
+  --n: 3;
+}
+
+.contactButtonNav ul li span:nth-child(4) {
+  --n: 4;
 }

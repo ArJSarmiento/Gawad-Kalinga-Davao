@@ -29,7 +29,7 @@
 }
 
 .ourprog-content {
-  padding: 105px 0px;
+  padding: 100px 0px;
   width: 100%;
 }
 
@@ -38,21 +38,18 @@
   font-style: normal;
   font-weight: 750;
   font-size: clamp(20px, 5vw, 36px);
-
   color: white;
-
   line-height: 94.19%;
   letter-spacing: 0.05em;
   text-transform: capitalize;
   text-align: center;
-
-  margin: 0px;
+  margin-bottom: 125px;
 }
 
 .progcontainer {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(max(300px, 100%/2), 1fr));
-  padding: 0px;
+  /* padding: 30px; */
   justify-items: center;
   margin: 5vw 0px;
 }

@@ -5,17 +5,22 @@
     bottom: 0;
 }
 
+.endpovertytext
+{
+    width: 80vw;
+    display: contents;
+    margin: 0 2%;
+}
 
 .endpovertytext> *
 {
     font-family: Avenir LT Std;
     font-weight: 750;
-    font-size: clamp(20px, 5vw, 36px);
+    font-size: clamp(20px, 5vw, 43px);
     font-style: normal;
     color: rgb(64,65,66);
-    line-height: 94.19%;
-    letter-spacing: 0.05em;
-    text-transform: capitalize;
+    letter-spacing: 4px;
+    text-transform: uppercase;
     width: 100%;
     text-align: center;
     margin: 0px;
@@ -24,6 +29,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin: 5% 0px;
 }
 
 .t2{
@@ -43,4 +49,119 @@
     background-position: center;
     background-repeat: no-repeat;
     z-index: 3;
+    display: flex;
+    align-items: center;
+}
+
+
+.contactdetails .left 
+{width: 45%;margin: 5%;}
+
+.contactdetails .left div
+{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: clamp(12px, 4vw, 18px);
+    font-style: normal;
+    color: white;
+    padding-top: clamp(0px, 5vw, 25px);
+    width: 100%;
+    max-width: 400px;
+}
+
+.address {}
+
+.contactdetails .right{
+    width: 45%;
+    text-align: right;
+    padding-right: 5%;
+}
+
+.contactdetails .right div{
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: clamp(12px, 4vw, 18px);
+    font-style: normal;
+    color: white;
+    padding-top: clamp(0px, 5vw, 25px);
+}
+
+
+.link{
+    color: #ff9900 !important;
+}
+
+.buttonNav{
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: -21px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+nav ul li {
+    --c: #404142;
+    color: var(--c);
+    font-size: 16px;
+    border: 3px solid var(--c);
+    border-radius: 0.5em;
+    width: 12em;
+    height: 3em;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: Roboto;
+    letter-spacing: 0.1em;
+    text-align: center;
+    line-height: 3em;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    transition: 0.5s;
+    margin: 1em;
+    cursor: pointer;
+}
+
+nav ul li span {
+    position: absolute;
+    width: 25%;
+    height: 100%;
+    background-color: var(--c);
+    transform: translateY(150%);
+    border-radius: 50%;
+    left: calc((var(--n) - 1) * 25%);
+    transition: 0.5s;
+    transition-delay: calc((var(--n) - 1) * 0.1s);
+    z-index: -1;
+}
+
+nav ul li:hover {
+    color: white;
+}
+
+nav ul li:hover span {
+    transform: translateY(0) scale(2);
+}
+
+nav ul li span:nth-child(1) {
+    --n: 1;
+}
+
+nav ul li span:nth-child(2) {
+    --n: 2;
+}
+
+nav ul li span:nth-child(3) {
+    --n: 3;
+}
+
+nav ul li span:nth-child(4) {
+    --n: 4;
 }

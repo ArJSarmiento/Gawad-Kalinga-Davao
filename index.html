@@ -29,8 +29,10 @@
   <script type="text/javascript" src="js/script.js"></script>
   <script type="text/javascript" src="js/momentumscroll.js"></script>
 
+
   <script>
     document.addEventListener("DOMContentLoaded", function () {
+  
       AOS.init({
         offset: 60,  duration: 350,
         debounceDelay: 50,
@@ -109,7 +111,7 @@
         </li>
         <li class="MobileNav-item" data-mobile-nav-item="4">
           <div class="MobileNav-item-title">
-            <a href="#">contact</a>
+            <a href="#contactLink">contact</a>
           </div>
         </li>
       </ul>
@@ -139,7 +141,7 @@
           </a>
         </div>
         <div class="Header-nav-item" data-nav-item="4">
-          <a href="#">
+          <a href="#contactLink">
             <span class="text">contact</span>
             <div class="slide"></div>
           </a>
@@ -266,52 +268,84 @@
 
     </section>
 
-    <section class="contact-container">
+    <section class="contact-container" id="contactLink">
       <div class="spacer layer1"></div>
 
-      <div id="contact">
-        <h1 class="section-header">Contact Us</h1>
-        <form action="">
-          <div class="input-container ic1">
-            <input id="firstname" class="input" type="text" placeholder=" " />
-            <div class="cut"></div>
-            <label for="firstname" class="placeholder">First name</label>
-          </div>
-          <div class="input-container ic2">
-            <input id="email" class="input" type="text" placeholder=" " />
-            <div class="cut cut-short"></div>
-            <label for="email" class="placeholder">Email</>
+      <div class="contactbg">
+        <div id="contact">
+          <h1 class="section-header">Contact Us</h1>
+          <form id="contactForm" action="">
+            <div class="input-container ic1">
+              <input id="firstname" class="input" type="text" placeholder=" " />
+              <div class="cut"></div>
+              <label for="firstname" class="placeholder">First name</label>
             </div>
-          <div class="input-container ic2">
-            <input id="lastname" class="input" type="text" placeholder=" " />
-            <div class="cut"></div>
-            <label for="lastname" class="placeholder">Message</label>
-          </div>
-            <button type="text" class="submit">SEND</button>
+            <div class="input-container ic2">
+              <input id="email" class="input" type="text" placeholder=" " />
+              <div class="cut cut-short"></div>
+              <label for="email" class="placeholder">Email</>
+              </div>
+            <div id="textarea" class="input-container ic2">
+              <textarea id="lastname" class="input" type="text" placeholder=" "></textarea>
+              <div class="cut"></div>
+              <label for="lastname" class="placeholder">Message</label>
+            </div>
+            <nav class="contactButtonNav">
+              <ul>
+                <li onclick="contactForm.submit();">
+                  SEND
+                  <span></span><span></span><span></span><span></span>
+                </li>
+              </ul>
+            </nav>
           </form>
+        </div>
       </div>
-      
       <div class="spacer layer2"></div>
     </section>
 
-  <footer>
-    <div class="endpovertytext">
-      <span class="t1"> TOGETHER, WE CAN 
-        <span class="t2">
-          END POVERTY
-          <span class="t3">.
-
-          </span>
+    <footer>
+      <div class="endpovertytext">
+        <span class="t1"> TOGETHER, WE CAN 
+          <span class="t2">END POVERTY<span class="t3">.</span></span>
         </span>
-      </span>
-    </div>
-    <div class="contactdetails">
-      <div class="logo">
-
       </div>
-    </div>
-  </footer>
+      <nav class="buttonNav">
+        <ul>
+          <li onclick="window.open('https://gk1world.com/media/NOH_112021v1.png','_blank')">
+            NEWS OF HOPE
+            <span></span><span></span><span></span><span></span>
+          </li>
+          <li onclick="window.open('https://gk1world.com/downloads/GK AR 2020-2021_online copy.pdf','_blank')">
+            ANNUAL REPORT
+            <span></span><span></span><span></span><span></span>
+          </li>
+        </ul>
+      </nav>
+      <div class="contactdetails">
+        <div class="left">
+          <img src="img/logo.png" alt="Gawad Kalinga Davao">
+          <div class="address">
+            Gawad Kalinga - Davao Office, Buhangin-Cabantian-Indangan Rd, Buhangin, Davao City, Davao del Sur, Philippines, 8000
+          </div>
+          <div class="phone">
+            (082) 222 4212
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="socmeds">
+
+          </div>
+          <div class="link">
+            gkdavao.com
+          </div>
+          <div class="copyright">
+            @ 2022 Gawad Kalinga Davao
+          </div>
+        </div>
+      </div>
+    </footer>
   </main>
 </body>
-
 </html>

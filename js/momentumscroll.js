@@ -1,6 +1,3 @@
-
-
-
 document.addEventListener("DOMContentLoaded", function () {  
   //check if on mobile
   if (window.innerWidth >= 769) 
@@ -56,7 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
           return (1 - n) * a + n * b;
         }
     }
+    
     mscroll();
+
     window.addEventListener('resize', function(event){
       mscroll();
     });

@@ -1,0 +1,85 @@
+.ourworklandingpage {
+    width: 100vw;
+    height: 90vh;
+    background: url(../img/headerbg.jpg) no-repeat;
+    background-size: cover;
+}
+
+.ourworklandingpage .bg {
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(176deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.805208) 99.99%, #FFFFFF 100%);
+    z-index: 0;
+    /* position: absolute; */
+    /* top: 0; */
+}
+
+.ourworktext {
+    width: 55vw;
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+}
+
+.ourworktext p {
+    text-align: left;
+    padding-left: 5vw;
+}
+
+.ourworktext .p1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: clamp(12px, 3vw, 24px);
+    line-height: 28px;
+    /* text-align: center; */
+    color: #FFA319;
+}
+
+.ourworktext .p2 {
+    font-family: Avenir LT Std;
+    font-style: normal;
+    font-weight: 750;
+    font-size: clamp(36px, 3vw, 64px);
+    line-height: 98%;
+    /* or 63px */
+    color: #404243;
+}
+
+.ourworktext .p3 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: clamp(24px, 3vw, 36px);
+    ;
+    line-height: 95%;
+    /* or 34px */
+    color: #404243;
+}
+
+.ourworklandingpage img {
+    position: absolute;
+    right: 0;
+    top: 34vh;
+    z-index: 0;
+    width: 55vw;
+}
+
+@media screen and (max-width: 340px) {
+    .ourworklandingpage img {
+        top: 69vh;
+        width: 76vw;
+    }
+    .ourworktext {
+        width: 94vw;
+        top: 150px;
+    }
+}
+
+section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+}

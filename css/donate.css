@@ -1,0 +1,109 @@
+.donate {
+    background-color: #FFA319;
+    height: 100%;
+}
+
+.donate h1 {
+    padding: 1px 10%;
+}
+
+.generosity {
+    font-family: Avenir LT Std;
+    font-style: normal;
+    font-weight: 750;
+    font-size: clamp(24px, 3vw, 36px);
+    line-height: 43px;
+    text-align: center;
+    color: #F8F8F8;
+}
+
+.donate img {
+    width: 130px;
+    height: 130px;
+    align-self: center;
+}
+
+.layer3 {
+    background-image: url(../svg/donate.svg);
+}
+
+.give {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(../img/givebg.png);
+    background-size: cover;
+    /* height: 67vh; */
+    background-position: center center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.give p {
+    font-family: Avenir LT Std;
+    font-style: normal;
+    font-weight: 750;
+    font-size: clamp(12px, 3vw, 25px);
+    line-height: 30px;
+    text-align: center;
+    color: #404243;
+}
+
+.form {
+    font-family: Avenir LT Std;
+    font-style: normal;
+    font-weight: 750;
+    font-size: clamp(8px, 3vw, 18px);
+    line-height: 30px;
+    text-align: center;
+    color: #404243;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 117.8792px;
+    margin: 15% 0;
+    padding: 5%;
+    width: 70%;
+}
+
+.form img {
+    width: 120px;
+    height: auto;
+}
+
+.submit {
+    background-image: url(../img/donatebutton.png);
+    /* width: 20%; */
+    height: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-self: center;
+}
+
+.amountCont {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 80px;
+    justify-content: center;
+}
+
+.amount {
+    background: #FFFFFF;
+    border: 0.892332px solid #000000;
+    box-sizing: border-box;
+    border-radius: 58.8939px;
+    width: 20%;
+}
+
+.any {
+    background: #FFFFFF;
+    border: 0.892332px solid #000000;
+    box-sizing: border-box;
+    border-radius: 58.8939px;
+    width: 80%;
+    padding: 10px;
+    margin: 5% 0;
+}

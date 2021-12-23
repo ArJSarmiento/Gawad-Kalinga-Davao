@@ -1,0 +1,35 @@
+body::after {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    content: url("../img/programIcons/01.png") url("../img/programIcons/02.png")
+      url("../img/programIcons/03.png") url("../img/programIcons/04.png")
+      url("../img/programIcons/05.png") url("../img/programIcons/06.png")
+      url("../img/programIcons/07.png") url("../img/programIcons/08.png")
+      url("../img/programIcons/09.png") url("../img/programIcons/10.png")
+      url("../img/programIcons/11.png")
+      url("../img/programs/programs_01hover.jpg")
+      url("../img/programs/programs_01static.jpg")
+      url("../img/programs/programs_02hover.jpg")
+      url("../img/programs/programs_02static.jpg")
+      url("../img/programs/programs_03hover.jpg")
+      url("../img/programs/programs_03static.jpg")
+      url("../img/programs/programs_04Bhover.jpg")
+      url("../img/programs/programs_04Bstatic.jpg")
+      url("../img/programs/programs_04hover_1.jpg")
+      url("../img/programs/programs_04hover.jpg")
+      url("../img/programs/programs_04static_1.jpg")
+      url("../img/programs/programs_04static.jpg")
+      url("../img/programs/programs_05hover.jpg")
+      url("../img/programs/programs_05static.jpg")
+      url("../img/programs/programs_06hover.jpg")
+      url("../img/programs/programs_06static.jpg")
+      url("../img/programs/programs_07hover.jpg")
+      url("../img/programs/programs_07static.jpg")
+      url("../img/programs/programs_08hover.jpg")
+      url("../img/programs/programs_08static.jpg")
+      url("../img/programs/programs_10hover.jpg")
+      url("../img/programs/programs_10static.jpg");
+  }

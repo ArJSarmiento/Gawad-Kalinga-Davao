@@ -3,6 +3,9 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+}
+
+html{
   scroll-behavior: smooth;
 }
 
@@ -202,7 +205,7 @@ a {
   font-family: Lato, sans-serif;
   font-size: 24px;
   font-weight: bold;
-  margin: 26px 0;
+  margin: 30px 0;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
@@ -405,19 +408,21 @@ a {
   background: url(../img/hopestories2.jpg) no-repeat center center fixed;
   background-size: cover;
   width: 100%;
-  height: 95vh;
+  height: 200vh;
   will-change: transform;
 }
 
-.rects {
+.endpoverty {
   z-index: 3;
   position: absolute;
   top: 45vh;
-  width: 50%;
+  width: 50vw;
+  /* transform: scale(0.5); */
 }
 
+
 @media screen and (max-width: 550px) {
-  .rects {
+  .endpoverty {
     width: 70%;
     top: 45vh;
   }

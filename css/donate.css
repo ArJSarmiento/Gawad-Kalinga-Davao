@@ -1,0 +1,170 @@
+.donate {
+    background-color: #FFA319;
+    height: 100%;
+}
+
+.donationMessage{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.donate div h1 {
+    font-family: Avenir LT Std;
+    font-style: normal;
+    font-weight: 750;
+    font-size: clamp(20px, 5vw, 36px);
+    color: white;
+    line-height: 94.19%;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    width: 80%;
+    text-align: center;
+    margin: 5% 0;
+}
+
+.generosity {
+    font-family: Avenir LT Std;
+    font-style: normal;
+    font-weight: 750;
+    font-size: clamp(24px, 3vw, 36px);
+    /* line-height: 43px; */
+    text-align: center;
+    color: #F8F8F8;
+}
+
+.donate div img {
+    width: 130px;
+    height: auto;
+    align-self: center;
+}
+
+.layer3 {
+    background-image: url(../svg/donate.svg);
+}
+
+.give {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    background-image: url(../img/givebg.png);
+    background-size: cover;
+    /* height: 67vh; */
+    background-position: center center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.give p {
+    font-family: Avenir LT Std;
+    font-style: normal;
+    font-weight: 750;
+    font-size: clamp(12px, 3vw, 25px);
+    line-height: 30px;
+    text-align: center;
+    color: #404243;
+    width: 80%;
+}
+
+.form {
+    font-family: Avenir LT Std;
+    font-style: normal;
+    font-weight: 750;
+    font-size: clamp(8px, 3vw, 18px);
+    line-height: 30px;
+    text-align: center;
+    color: #404243;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 117.8792px;
+    margin: 20% 0;
+    padding: 5%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.form img {
+    width: 120px;
+    height: auto;
+}
+
+.submit {
+    width: 50%;
+    height: auto;
+    padding: 2% 0;
+    align-self: center;
+    border: 3px solid #ff9900;
+    box-sizing: border-box;
+    font-family: Avenir LT Std;
+    font-style: normal;
+    font-weight: 750;
+    font-size: clamp(18px, 3vw, 24px);
+    line-height: 30px;
+    color: #ff9900;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 117.8792px;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background: #ff9900;
+    color: white;
+}
+
+.amountCont {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.amount {
+    background: #FFFFFF;
+    border: 0.892332px solid #000000;
+    box-sizing: border-box;
+    border-radius: 58.8939px;
+    width: 175px;
+    cursor: pointer;
+}
+
+
+.amount:hover {
+    background: #FFFFFF;
+    border: 0.892332px solid #ff9900;
+    color: #ff9900;
+    box-sizing: border-box;
+    border-radius: 58.8939px;
+    width: 175px;
+    cursor: pointer;
+}
+
+.any {
+    background: #FFFFFF;
+    border: 0.892332px solid #000000;
+    box-sizing: border-box;
+    border-radius: 58.8939px;
+    font-family: Avenir LT Std;
+    font-style: normal;
+    font-weight: 750;
+    font-size: clamp(8px, 3vw, 18px);
+    line-height: 30px;
+    color: #404243;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 117.8792px;
+    width: 80%;
+    padding: 10px;
+    margin: 5% 0;
+}
+
+.layerLast{
+    background-image: url(../svg/footer.svg);
+    top: auto;
+    bottom: 0;
+}

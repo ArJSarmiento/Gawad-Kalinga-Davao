@@ -18,6 +18,7 @@
     <link href="css/ourwork.css" rel="stylesheet" />
     <link href="css/since.css" rel="stylesheet" />
     <link href="css/donate.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/footer.css">
 
     <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
@@ -25,10 +26,10 @@
 
     <link rel="stylesheet" href="node_modules/aos/dist/aos.css">
     <script src="node_modules/aos/dist/aos.js"></script>
+    <script type="text/javascript" src="node_modules/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
 
     <script type="text/javascript" src="js/script.js"></script>
     <!-- <script type="text/javascript" src="js/momentumscroll.js"></script> -->
-
 
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -38,6 +39,8 @@
                 debounceDelay: 50,
                 throttleDelay: 99,
             });
+            var Scrollbar = window.Scrollbar;
+            Scrollbar.init(document.querySelector('#my-scrollbar'));
         });
     </script>
 </head>
@@ -167,23 +170,28 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="article">
-                        <img src="img/calendararticles/Jan.png" alt="">
+                    <div class="scrollbarCont">
+                        <section id="my-scrollbar" class="article" data-scrollbar>
+                            <img src="img/calendararticles/Jan.png">
+                        </section>
                     </div>
                 </div>
 
                 <div class="watch">
                     <h1>Watch stories of hope from heroes young and old!</h1>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7SVsL8etfJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <div class="iframeContainer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/7SVsL8etfJY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
                 </div>
             </div>
             <div class="spacer layer2"></div>
         </section>
 
         <section class="donate">
-            <h1 class="generosity"> Your generosity can mean the end of poverty for an individual, a family, or an entire community</h1>
-            <img src="img/generosity.png" alt="">
+            <div class="donationMessage">
+                <h1 class="generosity"> Your generosity can mean the end of poverty for an individual, a family, or an entire community</h1>
+                <img src="img/generosity.png" alt="">
+            </div>
             <div class="give">
                 <div class="spacer layer3"></div>
                 <form class="form">
@@ -194,12 +202,58 @@
                         <div class="amount">Php 3,600</div>
                         <div class="amount">Php 6,600</div>
                     </div>
-                    <input class="any" type="text" placeholder="ANY AMOUNT">
-                    <div class="submit"></div>
+                    <input class="any" type="number" placeholder="ANY AMOUNT">
+                    <input type="submit" class="submit">
                 </form>
             </div>
-
+            <div class="spacer layerLast"></div>
         </section>
+
+        <footer>
+            <div class="endpovertytext">
+              <span class="t1"> TOGETHER, WE CAN 
+                <span class="t2">END POVERTY<span class="t3">.</span></span>
+              </span>
+            </div>
+            <nav class="buttonNav">
+              <ul>
+                <li onclick="window.open('https://gk1world.com/media/NOH_112021v1.png','_blank')">
+                  NEWS OF HOPE
+                  <span></span><span></span><span></span><span></span>
+                </li>
+                <li onclick="window.open('https://gk1world.com/downloads/GK AR 2020-2021_online copy.pdf','_blank')">
+                  ANNUAL REPORT
+                  <span></span><span></span><span></span><span></span>
+                </li>
+              </ul>
+            </nav>
+            <div class="contactdetails">
+              <div class="left">
+                <img src="img/logo.png" alt="Gawad Kalinga Davao">
+                <div class="address">
+                  Gawad Kalinga - Davao Office, Buhangin-Cabantian-Indangan Rd, Buhangin, Davao City, Davao del Sur, Philippines, 8000
+                </div>
+                <div class="phone">
+                  (082) 222 4212
+                </div>
+              </div>
+      
+              <div class="right">
+                <div class="socmeds">
+                    <a class="fb" href="https://facebook.com/gkdavaocity" target="_blank"></a>
+                    <a class="twitter" href="https://twitter.com/GawadKalingaHQ" target="_blank"></a>
+                    <a class="instagram" href="https://instagram.com/gawadkalinga/" target="_blank"></a>
+                    <a class="youtube" href="https://youtube.com/GawadKalingaHQ" target="_blank"></a>
+                </div>
+                <div class="link">
+                  gkdavao.com
+                </div>
+                <div class="copyright">
+                  @ 2022 Gawad Kalinga Davao
+                </div>
+              </div>
+            </div>
+          </footer>
     </main>
 </body>
 

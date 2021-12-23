@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "aos": "^2.3.4",
-    "slickscrolljs": "^1.2.3"
+    "slickscrolljs": "^1.2.3",
+    "smooth-scrollbar": "^8.7.0"
   }
 }

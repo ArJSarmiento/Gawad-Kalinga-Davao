@@ -165,3 +165,58 @@ nav ul li span:nth-child(3) {
 nav ul li span:nth-child(4) {
     --n: 4;
 }
+
+.socmeds{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: flex-end;
+/* width: 7%; */
+gap: 2vw;
+}
+
+.socmeds a{width: 50px;height: 50px;}
+
+.fb{
+   background-image: url(../img/socmed/fb.png); 
+   background-size: contain;
+   background-repeat: no-repeat;
+   background-position: center center;
+}
+
+.twitter{
+    background-image: url(../img/socmed/twitter.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.instagram{
+    background-image: url(../img/socmed/ig.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.youtube{
+    background-image: url(../img/socmed/yt.png); 
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.fb:hover{
+    background-image: url("../img/socmed/fb orange.png"); 
+ }
+ 
+ .twitter:hover{
+     background-image: url("../img/socmed/twitter orange.png"); 
+ }
+ 
+ .instagram:hover{
+     background-image: url("../img/socmed/ig orange.png"); 
+ }
+ 
+ .youtube:hover{
+     background-image: url("../img/socmed/yt orange.png"); 
+ }

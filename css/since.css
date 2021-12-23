@@ -14,14 +14,17 @@
 }
 
 .sinceheader {
-    font-family: Roboto;
+    font-family: Avenir LT Std;
     font-style: normal;
-    font-weight: bold;
-    font-size: clamp(48px, 3vw, 64px);
-    line-height: 75px;
-    /* identical to box height */
-    text-align: center;
+    font-weight: 750;
+    font-size: clamp(20px, 5vw, 36px);
     color: #F79101;
+    line-height: 94.19%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    /* width: 90%; */
+    text-align: center;
+    margin: 5vw 0;
 }
 
 .content {
@@ -37,16 +40,13 @@
     grid-template-columns: 35% 65%;
     justify-content: center;
     padding: 5vw 0px;
+    height: 150h;
 }
 
 .calendar {
     display: grid;
-    height: auto;
     grid-template-columns: repeat(auto-fill, minmax(max(80px, 100%/2), 1fr));
-    gap: 0;
-    align-content: center;
-    padding-bottom: 72px;
-    width: 100%;
+    height: 150vh;
 }
 
 .calendar div p {
@@ -114,37 +114,45 @@
 }
 
 .calendar div {
-    height: 250px;
-    /* background-color: white; */
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     text-align: left;
     display: flex;
     align-items: flex-end;
+    cursor: pointer;
+}
+
+.scrollbarCont{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    height: 150vh;
 }
 
 .gridcontainer .article {
-    width: 100%;
-    /* padding: 0px 10px; */
-    display: flex;
-    justify-content: center;
+    width: 90%;
+    height: 100%;
+    overflow: auto !important;
 }
 
 .gridcontainer .article img {
-    width: 90%;
-    position: relative;
-    /* height: 0; */
-    /* padding-bottom: 90%; */
+    width: 100%;
+    /* position: relative; */
 }
 
 .watch h1 {
     font-family: Avenir LT Std;
     font-style: normal;
     font-weight: 750;
-    font-size: clamp(24px, 3vw, 36px);
-    line-height: 43px;
+    font-size: clamp(20px, 5vw, 36px);
     text-align: center;
     color: #F8F8F8;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    width: 80%;
+    margin: 5vw 0px;
 }
 
 .watch {
@@ -156,36 +164,60 @@
 }
 
 .layer2 {
-    background-image: url(../svg/watch.svg);
+    background-image: url(../svg/watch.svg) !important;
     top: auto;
     bottom: 0;
 }
 
+.iframeContainer{
+    position: relative;
+    overflow: hidden;
+    width: 70%;
+    padding-top: 56.25%;
+    margin: 5vw 0;
+}
+
+.iframeContainer iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
 @media screen and (max-width: 709px) {
     .gridcontainer {
-        display: block;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        align-content: center;
-        align-items: center;
-    }
-    .calendarContainer {
-        width: 90%;
-        padding: 0 !important;
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: 35% 65%;
         justify-content: center;
+        padding: 5vw 0px;
+        height: 150h;
+    }
+    .gridcontainer {
+        display: flex;
+        /* grid-template-columns: 35% 65%; */
+        /* padding: 5vw 0px; */
+        height: 150vh;
+        flex-wrap: nowrap;
+        flex-direction: column;
         align-items: center;
     }
+    
     .calendar {
         display: grid;
-        height: auto;
-        grid-template-columns: 1fr;
-        gap: 0;
-        align-content: center;
-        padding-bottom: 72px;
-        width: 60%;
+        grid-template-columns: repeat(auto-fill, minmax(max(80px, 100%/2), 1fr));
+        height: 150vh;
+    }
+
+    .calendarContainer
+    {
+    width: 90%;
+    padding: 0;
+    }
+
+    .scrollbarCont{
+        display: none !important;
     }
 }

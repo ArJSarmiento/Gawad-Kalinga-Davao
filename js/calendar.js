@@ -12,12 +12,17 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     months.forEach(function(month) {
-        month.addEventListener('click', function() {
+        month.addEventListener('click', function() {  
             //get id of month when clicked
-
             var my_id = month.getAttribute('id').toString();
             month.focus();
             articleImg.src = "img/calendararticles/" + toTitleCase(my_id) + ".png";
+           
+            //check if window width is 709px
+            if (window.innerWidth < 710) {
+                //if so link to #modal-open
+                window.location.href = '#modal-opened';
+            }
         });
     });
 });

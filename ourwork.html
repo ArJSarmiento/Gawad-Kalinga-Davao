@@ -56,22 +56,22 @@
             <ul class="MobileNav-nav" data-mobile-nav-list>
                 <li class="MobileNav-item" data-mobile-nav-item="1">
                     <div class="MobileNav-item-title">
-                        <a href="index.html">home</a>
+                        <a href="index.html" onclick="location.reload()">home</a>
                     </div>
                 </li>
                 <li class="MobileNav-item" data-mobile-nav-item="2">
                     <div class="MobileNav-item-title">
-                        <a href="ourwork.html">our work</a>
+                        <a href="ourwork.html" onclick="location.reload()">our work</a>
                     </div>
                 </li>
                 <li class="MobileNav-item" data-mobile-nav-item="3">
                     <div class="MobileNav-item-title">
-                        <a href="ourwork.html#donateLink">donate</a>
+                        <a href="ourwork.html#donateLink" onclick="location.reload()">donate</a>
                     </div>
                 </li>
                 <li class="MobileNav-item" data-mobile-nav-item="4">
                     <div class="MobileNav-item-title">
-                        <a href="index.html#contactLink">contact</a>
+                        <a href="index.html#contactLink" onclick="window.location.reload()" >contact</a>
                     </div>
                 </li>
             </ul>
@@ -83,25 +83,25 @@
             <a class="logo" href="index.html"> <img src="img/logo.png"" alt=""> </a>
             <nav class=" Header-nav" data-nav>
                 <div class="Header-nav-item" data-nav-item="1">
-                    <a href="index.html">
+                    <a href="index.html" onclick="location.reload()">
                         <span class="text">home</span>
                         <div class="slide"></div>
                     </a>
                 </div>
                 <div class="Header-nav-item" data-nav-item="2">
-                    <a href="ourwork.html">
+                    <a href="ourwork.html" onclick="location.reload()">
                         <span class="text">our work</span>
                         <div class="slide"></div>
                     </a>
                 </div>
                 <div class="Header-nav-item" data-nav-item="3">
-                    <a href="ourwork.html#donateLink">
+                    <a href="ourwork.html#donateLink" onclick="location.reload()">
                         <span class="text">donate</span>
                         <div class="slide"></div>
                     </a>
                 </div>
                 <div class="Header-nav-item" data-nav-item="4">
-                    <a href="index.html#contactLink">
+                    <a href="index.html#contactLink" onclick="window.location.reload()">
                         <span class="text">contact</span>
                         <div class="slide"></div>
                     </a>
@@ -166,12 +166,13 @@
                             <div class="month" tabindex="0" id="NOV">
                                 <p>NOV</p>
                             </div>
-                            <div class="month" tabindex="0" id="DEC">
+                            <div  tabindex="0" id="DEC">
                                 <p>DEC</p>
                             </div>
                         </div>
                     </div>
-                    <div class="scrollbarCont">
+                    <div class="scrollbarCont" id="modal-opened">
+                        <a href="#modal-closed" class="link-2"></a>
                         <section id="my-scrollbar" class="article" data-scrollbar>
                             <img id="articleImg" src="img/calendararticles/Jan.png">
                         </section>
@@ -197,7 +198,7 @@
                 <div class="spacer layer3"></div>
                 <form  id="donateLink" class="form">
                     <img src="img/donate.png" alt="">
-                    <p>CHOOSE HOW MUCH AND HOW OFTEN YOU WANT TO GIVE</p>
+                    <p>CHOOSE HOW MUCH YOU WANT TO GIVE</p>
                     <div class="amountCont">
                         <div class="amount">Php 900</div>
                         <div class="amount">Php 3,600</div>

@@ -192,6 +192,10 @@
     color: #F79101 !important;
 }
 
+.article::-webkit-scrollbar {
+    display: none;
+}
+
 @media screen and (max-width: 709px) {
     .gridcontainer {
         display: grid;

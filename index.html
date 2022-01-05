@@ -27,7 +27,7 @@
   <script src="node_modules/aos/dist/aos.js"></script>
 
   <script type="text/javascript" src="js/script.js"></script>
-  <script type="text/javascript" src="js/momentumscroll.js"></script>
+  <!-- <script type="text/javascript" src="js/momentumscroll.js"></script> -->
 
 
   <script>
@@ -90,66 +90,66 @@
   <div class="MobileNav" data-mobile-nav>
     <div class="MobileNav-overlay" data-mobile-nav-overlay></div>
     <div class="MobileNav-inner">
-      <div class="MobileNav-trigger" data-mobile-nav-trigger>
-        <div class="MobileNav-trigger-inner"></div>
-      </div>
-      <ul class="MobileNav-nav" data-mobile-nav-list>
-        <li class="MobileNav-item" data-mobile-nav-item="1">
-          <div class="MobileNav-item-title">
-            <a href="index.html">home</a>
-          </div>
-        </li>
-        <li class="MobileNav-item" data-mobile-nav-item="2">
-          <div class="MobileNav-item-title">
-            <a href="#">our work</a>
-          </div>
-        </li>
-        <li class="MobileNav-item" data-mobile-nav-item="3">
-          <div class="MobileNav-item-title">
-            <a href="#">donate</a>
-          </div>
-        </li>
-        <li class="MobileNav-item" data-mobile-nav-item="4">
-          <div class="MobileNav-item-title">
-            <a href="#contactLink">contact</a>
-          </div>
-        </li>
-      </ul>
+        <div class="MobileNav-trigger" data-mobile-nav-trigger>
+            <div class="MobileNav-trigger-inner"></div>
+        </div>
+        <ul class="MobileNav-nav" data-mobile-nav-list>
+            <li class="MobileNav-item" data-mobile-nav-item="1">
+                <div class="MobileNav-item-title">
+                    <a href="index.html" onclick="location.reload()">home</a>
+                </div>
+            </li>
+            <li class="MobileNav-item" data-mobile-nav-item="2">
+                <div class="MobileNav-item-title">
+                    <a href="ourwork.html" onclick="location.reload()">our work</a>
+                </div>
+            </li>
+            <li class="MobileNav-item" data-mobile-nav-item="3">
+                <div class="MobileNav-item-title">
+                    <a href="ourwork.html#donateLink" onclick="location.reload()">donate</a>
+                </div>
+            </li>
+            <li class="MobileNav-item" data-mobile-nav-item="4">
+                <div class="MobileNav-item-title">
+                    <a href="index.html#contactLink" onclick="location.reload()">contact</a>
+                </div>
+            </li>
+        </ul>
     </div>
   </div>
 
   <header class="Header" data-header>
     <div class="Header-inner" data-header-nav>
-      <a class="logo" href="index.html"> <img src="img/logo.png"" alt=""> </a>
+        <a class="logo" href="index.html"> <img src="img/logo.png"" alt=""> </a>
         <nav class=" Header-nav" data-nav>
-        <div class="Header-nav-item" data-nav-item="1">
-          <a href="index.html">
-            <span class="text">home</span>
-            <div class="slide"></div>
-          </a>
-        </div>
-        <div class="Header-nav-item" data-nav-item="2">
-          <a href="#">
-            <span class="text">our work</span>
-            <div class="slide"></div>
-          </a>
-        </div>
-        <div class="Header-nav-item" data-nav-item="3">
-          <a href="#">
-            <span class="text">donate</span>
-            <div class="slide"></div>
-          </a>
-        </div>
-        <div class="Header-nav-item" data-nav-item="4">
-          <a href="#contactLink">
-            <span class="text">contact</span>
-            <div class="slide"></div>
-          </a>
-        </div>
+            <div class="Header-nav-item" data-nav-item="1">
+                <a href="index.html" onclick="location.reload()">
+                    <span class="text">home</span>
+                    <div class="slide"></div>
+                </a>
+            </div>
+            <div class="Header-nav-item" data-nav-item="2">
+                <a href="ourwork.html" onclick="location.reload()">
+                    <span class="text">our work</span>
+                    <div class="slide"></div>
+                </a>
+            </div>
+            <div class="Header-nav-item" data-nav-item="3">
+                <a href="ourwork.html#donateLink" onclick="location.reload()">
+                    <span class="text">donate</span>
+                    <div class="slide"></div>
+                </a>
+            </div>
+            <div class="Header-nav-item" data-nav-item="4">
+                <a href="index.html#contactLink" onclick="location.reload()">
+                    <span class="text">contact</span>
+                    <div class="slide"></div>
+                </a>
+            </div>
         </nav>
         <button class="MobileNav-trigger" data-mobile-nav-trigger>
-          <div class="MobileNav-trigger-inner"></div>
-        </button>
+                <div class="MobileNav-trigger-inner"></div>
+            </button>
     </div>
   </header>
 
@@ -194,7 +194,7 @@
 
     <section class="white-p-container">
       <section class="white-p">
-        <div data-aos="flip-right">
+        <div data-aos="zoom-in-down">
           <h1>THE PROBLEM OF POVERTY IS MASSIVE AND MULTI-FACETED.</h1>
           <p>
             It is brought about by a crisis in values as much as in economics.
@@ -268,12 +268,12 @@
 
     </section>
 
-    <section class="contact-container" id="contactLink">
+    <section class="contact-container" >
       <div class="spacer layer1"></div>
 
-      <div class="contactbg">
-        <div id="contact">
-          <h1 class="section-header">Contact Us</h1>
+      <div id="contactLink" class="contactbg">
+        <div  class="contact">
+          <h1  class="section-header">Contact Us</h1>
           <form id="contactForm" action="">
             <div class="input-container ic1">
               <input id="firstname" class="input" type="text" placeholder=" " />

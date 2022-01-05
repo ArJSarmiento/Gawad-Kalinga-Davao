@@ -29,6 +29,7 @@
     <script type="text/javascript" src="node_modules/smooth-scrollbar/dist/smooth-scrollbar.js"></script>
 
     <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/calendar.js"></script>
     <!-- <script type="text/javascript" src="js/momentumscroll.js"></script> -->
 
     <script>
@@ -55,22 +56,22 @@
             <ul class="MobileNav-nav" data-mobile-nav-list>
                 <li class="MobileNav-item" data-mobile-nav-item="1">
                     <div class="MobileNav-item-title">
-                        <a href="index.html">home</a>
+                        <a href="index.html" onclick="location.reload()">home</a>
                     </div>
                 </li>
                 <li class="MobileNav-item" data-mobile-nav-item="2">
                     <div class="MobileNav-item-title">
-                        <a href="#">our work</a>
+                        <a href="ourwork.html" onclick="location.reload()">our work</a>
                     </div>
                 </li>
                 <li class="MobileNav-item" data-mobile-nav-item="3">
                     <div class="MobileNav-item-title">
-                        <a href="#">donate</a>
+                        <a href="ourwork.html#donateLink" onclick="location.reload()">donate</a>
                     </div>
                 </li>
                 <li class="MobileNav-item" data-mobile-nav-item="4">
                     <div class="MobileNav-item-title">
-                        <a href="#contactLink">contact</a>
+                        <a href="index.html#contactLink" onclick="window.location.reload()" >contact</a>
                     </div>
                 </li>
             </ul>
@@ -82,25 +83,25 @@
             <a class="logo" href="index.html"> <img src="img/logo.png"" alt=""> </a>
             <nav class=" Header-nav" data-nav>
                 <div class="Header-nav-item" data-nav-item="1">
-                    <a href="index.html">
+                    <a href="index.html" onclick="location.reload()">
                         <span class="text">home</span>
                         <div class="slide"></div>
                     </a>
                 </div>
                 <div class="Header-nav-item" data-nav-item="2">
-                    <a href="#">
+                    <a href="ourwork.html" onclick="location.reload()">
                         <span class="text">our work</span>
                         <div class="slide"></div>
                     </a>
                 </div>
                 <div class="Header-nav-item" data-nav-item="3">
-                    <a href="#">
+                    <a href="ourwork.html#donateLink" onclick="location.reload()">
                         <span class="text">donate</span>
                         <div class="slide"></div>
                     </a>
                 </div>
                 <div class="Header-nav-item" data-nav-item="4">
-                    <a href="#contactLink">
+                    <a href="index.html#contactLink" onclick="window.location.reload()">
                         <span class="text">contact</span>
                         <div class="slide"></div>
                     </a>
@@ -132,47 +133,48 @@
                 <div class="gridcontainer">
                     <div class="calendarContainer">
                         <div class="calendar">
-                            <div>
+                            <div class="month" tabindex="0" id="JAN">
                                 <p>JAN</p>
                             </div>
-                            <div>
+                            <div class="month" tabindex="0" id="FEB">
                                 <p>FEB</p>
                             </div>
-                            <div>
+                            <div class="month" tabindex="0" id="MAR">
                                 <p>MAR</p>
                             </div>
-                            <div>
+                            <div class="month" tabindex="0" id="APR">
                                 <p>APR</p>
                             </div>
-                            <div>
+                            <div class="month" tabindex="0" id="MAY">
                                 <p>MAY</p>
                             </div>
-                            <div>
+                            <div class="month" tabindex="0" id="JUN">
                                 <p>JUN</p>
                             </div>
-                            <div>
+                            <div class="month" tabindex="0" id="JUL">
                                 <p>JUL</p>
                             </div>
-                            <div>
+                            <div class="month" tabindex="0" id="AUG">
                                 <p>AUG</p>
                             </div>
-                            <div>
+                            <div class="month" tabindex="0" id="SEP">
                                 <p>SEP</p>
                             </div>
-                            <div>
+                            <div class="month" tabindex="0" id="OCT">
                                 <p>OCT</p>
                             </div>
-                            <div>
+                            <div class="month" tabindex="0" id="NOV">
                                 <p>NOV</p>
                             </div>
-                            <div>
+                            <div  tabindex="0" id="DEC">
                                 <p>DEC</p>
                             </div>
                         </div>
                     </div>
-                    <div class="scrollbarCont">
+                    <div class="scrollbarCont" id="modal-opened">
+                        <a href="#modal-closed" class="link-2"></a>
                         <section id="my-scrollbar" class="article" data-scrollbar>
-                            <img src="img/calendararticles/Jan.png">
+                            <img id="articleImg" src="img/calendararticles/Jan.png">
                         </section>
                     </div>
                 </div>
@@ -187,16 +189,16 @@
             <div class="spacer layer2"></div>
         </section>
 
-        <section class="donate">
+        <section  class="donate">
             <div class="donationMessage">
                 <h1 class="generosity"> Your generosity can mean the end of poverty for an individual, a family, or an entire community</h1>
                 <img src="img/generosity.png" alt="">
             </div>
             <div class="give">
                 <div class="spacer layer3"></div>
-                <form class="form">
+                <form  id="donateLink" class="form">
                     <img src="img/donate.png" alt="">
-                    <p>CHOOSE HOW MUCH AND HOW OFTEN YOU WANT TO GIVE</p>
+                    <p>CHOOSE HOW MUCH YOU WANT TO GIVE</p>
                     <div class="amountCont">
                         <div class="amount">Php 900</div>
                         <div class="amount">Php 3,600</div>

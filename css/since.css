@@ -17,7 +17,7 @@
     font-family: Avenir LT Std;
     font-style: normal;
     font-weight: 750;
-    font-size: clamp(20px, 5vw, 36px);
+    font-size: clamp(20px, 9vw, 36px);
     color: #F79101;
     line-height: 94.19%;
     letter-spacing: 0.05em;
@@ -40,13 +40,13 @@
     grid-template-columns: 35% 65%;
     justify-content: center;
     padding: 5vw 0px;
-    height: 150h;
+    height: 200vh;
 }
 
 .calendar {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(max(80px, 100%/2), 1fr));
-    height: 150vh;
+    height: 200vh;
 }
 
 .calendar div p {
@@ -97,7 +97,7 @@
 }
 
 .calendar div:nth-child(10) {
-    background-image: url(../img/ourworkmonthly/oct.png);
+    background-image: url(../img/ourworkmonthly/OCT.png);
 }
 
 .calendar div:nth-child(11) {
@@ -187,6 +187,15 @@
     height: 100%;
 }
 
+.month:hover, .month:hover *, .month:focus, .month:focus *
+{
+    color: #F79101 !important;
+}
+
+.article::-webkit-scrollbar {
+    display: none;
+}
+
 @media screen and (max-width: 709px) {
     .gridcontainer {
         display: grid;
@@ -199,7 +208,7 @@
         display: flex;
         /* grid-template-columns: 35% 65%; */
         /* padding: 5vw 0px; */
-        height: 150vh;
+        height: 250vh;
         flex-wrap: nowrap;
         flex-direction: column;
         align-items: center;
@@ -208,16 +217,67 @@
     .calendar {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(max(80px, 100%/2), 1fr));
-        height: 150vh;
+        height: 250vh;
     }
 
     .calendarContainer
     {
-    width: 90%;
-    padding: 0;
+        width: 90%;
+        padding: 0;
     }
 
     .scrollbarCont{
-        display: none !important;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 10;
+      
+        display: none;
+        justify-content: center;
+        align-items: center;
+      
+        width: 100%;
+        height: 100%;
     }
+
+    .scrollbarCont:target{
+        display: flex;
+        padding-top: 10%;
+        background: rgb(65,64,66, 0.9);
+    }
+
+    .scrollbarCont .article
+    {
+        width: 95%;
+        height: 100%;
+        overflow: auto !important;
+    }
+    .link-2 {
+        width: 2rem;
+        height: 2rem;
+        border: 3px solid #ff9900;
+        border-radius: 100rem;
+        color: inherit;
+        font-size: 2rem;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: .2s;
+        z-index: 2;
+        text-decoration: none;
+      }
+      
+      .link-2::before {
+        content: '×';
+        color: #ff9900;
+      }
+      
+      .link-2:hover,
+      .link-2:focus {
+        border-color: hsla(0, 0%, 100%, .6);
+        transform: translateY(-.2rem);
+      }
 }

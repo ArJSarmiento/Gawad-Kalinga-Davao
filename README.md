@@ -13,5 +13,5 @@ Gawad Kalinga Davao serves as a platform for connecting Gawad Kalinga and its vo
 # Design Inspiration
 * [Gawad Kalinga](https://www.gk1world.com/)
 
-# Demo
+# Project Presentation
 [![VIEW DEMO](https://img.youtube.com/vi/iz9Hgg2b-4Y/hqdefault.jpg)](https://www.youtube.com/watch?v=iz9Hgg2b-4Y)
